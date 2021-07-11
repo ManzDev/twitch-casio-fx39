@@ -428,7 +428,11 @@ body {
     top: 300px;
     border-radius: 2px 4px 2px 4px;
     border: 2px solid #333;
-    background: linear-gradient(to right, #374049 0 40%, #777 60% 71%, #222 100%);
+    border-right: 0;
+    border-bottom: 0;
+    border-top: 0;
+    background: linear-gradient(to right, #374049 0 40%, #777 60% 71%, #444 100%);
+    box-shadow: 2px 4px 5px #000 inset;
     z-index: 2;
 
     & input[name="mode"] {
@@ -443,10 +447,12 @@ body {
 
     & input:checked + label {
       background:
-        radial-gradient(ellipse 180% 30%, #555 0 20%, transparent 20% 30%),
+        radial-gradient(ellipse 180% 30%, #555 0 20%, #222 20% 28%, transparent 30% 35%),
         repeating-linear-gradient(to bottom, #111 0 1px, #444 1px 2px);
-      height: 40px;
+      box-shadow: 0 0 2px 1px #111;
+      height: 42px;
       border-radius: 1px;
+      border-bottom: 2px solid #111;
     }
   }
 
